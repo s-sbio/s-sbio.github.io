@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/favicon.png" />
+    
+
+    <title>
+        
+          ssbio/SAW-96/SAW-96装机调试SOP - 在线文档
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/favicon.png">
+    <span>在线文档</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <ul>
+<li><a href="/">首页</a></li>
+</ul>
+<h2 id="AW-1000"><a href="#AW-1000" class="headerlink" title="AW-1000"></a>AW-1000</h2><ul>
+<li><a href="/ssbio/AW-1000/AW-1000压力传感器SOP">AW-1000压力传感器SOP</a></li>
+</ul>
+<h2 id="SAW-48"><a href="#SAW-48" class="headerlink" title="SAW-48"></a>SAW-48</h2><ul>
+<li>待完善</li>
+</ul>
+<h2 id="SAW-96"><a href="#SAW-96" class="headerlink" title="SAW-96"></a>SAW-96</h2><ul>
+<li><a href="/ssbio/SAW-96/SAW-96用户操作SOP">SAW-96用户操作SOP</a></li>
+<li><a href="/ssbio/SAW-96/SAW-96装机调试SOP">SAW-96装机调试SOP</a></li>
+<li><a href="/ssbio/SAW-96/SAW-96装箱拆箱SOP">SAW-96装箱拆箱SOP</a></li>
+<li><a href="/ssbio/SAW-96/SAW-96常见问题整理">SAW-96常见问题整理</a></li>
+</ul>
+<h2 id="SSNP-2000A"><a href="#SSNP-2000A" class="headerlink" title="SSNP-2000A"></a>SSNP-2000A</h2><ul>
+<li>待完善</li>
+</ul>
+<h2 id="SSNP-2000B"><a href="#SSNP-2000B" class="headerlink" title="SSNP-2000B"></a>SSNP-2000B</h2><ul>
+<li>待完善</li>
+</ul>
+<h2 id="SSNP-3000A"><a href="#SSNP-3000A" class="headerlink" title="SSNP-3000A"></a>SSNP-3000A</h2><ul>
+<li>待完善</li>
+</ul>
+<h2 id="SSNP-9600A"><a href="#SSNP-9600A" class="headerlink" title="SSNP-9600A"></a>SSNP-9600A</h2><ul>
+<li>待完善</li>
+</ul>
+<h2 id="SSNP-9600B"><a href="#SSNP-9600B" class="headerlink" title="SSNP-9600B"></a>SSNP-9600B</h2><ul>
+<li>待完善</li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="SAW-96装机调试SOP"><a href="#SAW-96装机调试SOP" class="headerlink" title="SAW-96装机调试SOP"></a>SAW-96装机调试SOP</h1><p>供生产、质检、技术支持使用。</p>
+<h2 id="一、电机方向调试"><a href="#一、电机方向调试" class="headerlink" title="一、电机方向调试"></a>一、电机方向调试</h2><h3 id="提取方向（左右塔）"><a href="#提取方向（左右塔）" class="headerlink" title="提取方向（左右塔）"></a>提取方向（左右塔）</h3><p>1、X轴方向：输入500，点向左，向右，X回零按钮，看方向是否正确。如果方向错误，检查鸣志驱动器拨码，电路板接线，电路板拨码和程序。</p>
+<p>2、小丝（磁棒）：输入500，点Z1向上，Z1向下，回零按钮，看方向是否正确。如果方向错误，检查金色57电机的参数（dir极性）。</p>
+<p>3、大丝（磁套）：输入500，点Z2向上，Z2向下，回零按钮，看方向是否正确。同上</p>
+<p>4、同步运动：输入500，点同步向下，同步向上，看移动是否同步。如果磁棒磁套走的距离不相等，越走间距越来越大，考虑金色57电机的参数（电子齿轮比分母）。</p>
+<p><img src="SAW-96%E8%A3%85%E6%9C%BA%E8%B0%83%E8%AF%95SOP.assets/image-20200629121925063.png" alt="image-20200629121925063"></p>
+<h3 id="分液方向（机械臂-加热板）"><a href="#分液方向（机械臂-加热板）" class="headerlink" title="分液方向（机械臂+加热板）"></a>分液方向（机械臂+加热板）</h3><p>1、X轴：输入500，点击向左，向右，X回零，看方向是否正确。如果错误，考虑X轴金色57电机的参数问题。</p>
+<p>2、Y轴：输入500，点击向左，向右，Y回零，看方向是否正确。如果错误，考虑Y轴电机拨码问题。</p>
+<p>3、Z轴1(里)、Z轴2(外)：输入500，点击向下，向上，回零，看方向是否正确。如果方向错误，用鸣志电机的软件，检查参数是否正确。</p>
+<blockquote>
+<p>注意：Z1是否对应的是里面的针杆，Z2是否对应得失外面的针杆，如果对应错误，考虑接线问题和板子的拨码</p>
+</blockquote>
+<p>4、泵1(里)、泵2(外)：输入50，点击吸液，排液，回零，注意观察移动方向，对应关系是否正确。如果有问题检查驱动板拨码，电路板接线。</p>
+<blockquote>
+<p>注意：泵的速度比较慢，需要等待泵运行结束，才可以点击其他按钮，否则会导致软件卡死</p>
+</blockquote>
+<p>5、加热板方向：输入2000，点击向前，向后，回零，观察移动方向是否正确。如果方向错误，检查鸣志驱动器拨码，电路板接线，电路板拨码和程序。</p>
+<p><img src="SAW-96%E8%A3%85%E6%9C%BA%E8%B0%83%E8%AF%95SOP.assets/image-20200629125137447.png" alt="image-20200629125137447"></p>
+<h2 id="二、温控板温度调试"><a href="#二、温控板温度调试" class="headerlink" title="二、温控板温度调试"></a>二、温控板温度调试</h2><p>1、温度显示：点击【温度显示打开】，检查24根温度传感器，温度显示是否正常。</p>
+<p>2、温度加热：点击【左塔裂解开启】和【右塔裂解开启】开启加热，观察奇数位的实际温度有无上升，检查无误后，点击【左塔裂解关闭】和【右塔裂解关闭】关闭加热。再点击【左塔洗脱开启】和【右塔洗脱开启】，观察偶数位的实际温度有无上升，检查无误后关闭。</p>
+<blockquote>
+<p>注意：</p>
+<p>1)、设定温度50，因为加热结构过冲的原因，会达到60多度，属于正常现象，温度会维持在60多度20秒，并慢慢下降至50度左右。</p>
+<p>2)、温度测试完毕，需要关闭温度显示，再测试其他项目，否则容易导致通讯堵塞，因为是每秒读取刷新温度。</p>
+<p>3)、1块电路板有12根加热管，最多同时开启6根，如果超过6根会导致电源超载，仪器会断电重启。</p>
+</blockquote>
+<p><img src="SAW-96%E8%A3%85%E6%9C%BA%E8%B0%83%E8%AF%95SOP.assets/image-20200629131006140.png" alt="image-20200629131006140"></p>
+<h2 id="三、其他项目调试"><a href="#三、其他项目调试" class="headerlink" title="三、其他项目调试"></a>三、其他项目调试</h2><h3 id="1、紫外灯"><a href="#1、紫外灯" class="headerlink" title="1、紫外灯"></a>1、紫外灯</h3><p>点击【紫外灯开】按钮，观察左右塔上方的紫外灯是否正常。</p>
+<p><img src="SAW-96%E8%A3%85%E6%9C%BA%E8%B0%83%E8%AF%95SOP.assets/image-20200629133420688.png" alt="image-20200629133420688"></p>
+<h3 id="2、tip头检测"><a href="#2、tip头检测" class="headerlink" title="2、tip头检测"></a>2、tip头检测</h3><p>点击【Z1-Tip检测】，按钮显示“无”，用手遮挡Tip头光耦，再次点击按钮，按钮显示“有”，则表示光耦连接正常。【Z2-Tip检测】检测同理。</p>
+<p><img src="SAW-96%E8%A3%85%E6%9C%BA%E8%B0%83%E8%AF%95SOP.assets/image-20200629133602708.png" alt="image-20200629133602708"></p>
+<h3 id="3、压力传感器"><a href="#3、压力传感器" class="headerlink" title="3、压力传感器"></a>3、压力传感器</h3><p>点击【读取压力】按钮，看能否正常读取压力，再点击【开始测压】和【快速抽液】按钮，看压力是否有变化，有变化则表示传感器和管路正常。（详细教程可参见AW-1000压力传感器SOP）</p>
+<p><img src="SAW-96%E8%A3%85%E6%9C%BA%E8%B0%83%E8%AF%95SOP.assets/image-20200629134643903.png" alt="image-20200629134643903"></p>
+<h2 id="四、点位调试"><a href="#四、点位调试" class="headerlink" title="四、点位调试"></a>四、点位调试</h2><h3 id="提取点位"><a href="#提取点位" class="headerlink" title="提取点位"></a>提取点位</h3><p>1、加热板点位：输入50000，点击【加热板1向前】按钮，观察加热板与磁套是否前后对齐，如果没有则前后移动对齐。点击【提取点位设置】按钮，双击修改【加热板位移】的点位并保存（数值左是左塔，数值右是右塔）。</p>
+<p><img src="SAW-96%E8%A3%85%E6%9C%BA%E8%B0%83%E8%AF%95SOP.assets/image-20200629135557255.png" alt="image-20200629135557255"></p>
+<p><img src="SAW-96%E8%A3%85%E6%9C%BA%E8%B0%83%E8%AF%95SOP.assets/image-20200629135430261.png" alt="image-20200629135430261"></p>
+<p>2、X轴起始位移：输入3000，点击【向右】按钮，观察磁套与提取试剂盒的孔位是否对齐，如果没有则左右移动对齐，调整后保存。</p>
+<p>3、X轴间隔位置：输入3600，点击【向右】按钮5次，使之移动到第6列，观察孔位对齐，如果没有则左右移动对齐，调整后保存。</p>
+<p>4、磁棒位移：输入3800，点击【向下】按钮，磁棒略微贴合磁套，但不要顶到磁套，调整后保存。</p>
+<p>5、磁套位移：输入3000，点击【向下】按钮，观察磁套与试剂盒的贴合情况，不要压得太死，否则容易造成磁珠残留，调整后保存。</p>
+<p><img src="SAW-96%E8%A3%85%E6%9C%BA%E8%B0%83%E8%AF%95SOP.assets/image-20200629150517986.png" alt="image-20200629150517986"></p>
+<h3 id="分液点位"><a href="#分液点位" class="headerlink" title="分液点位"></a>分液点位</h3><h4 id="1、XY轴点位设定"><a href="#1、XY轴点位设定" class="headerlink" title="1、XY轴点位设定"></a>1、XY轴点位设定</h4><p>调整枪头盒，卸针槽，AH试剂，提取盒，pcr微孔板、样本盒的起点和终点，buff、阴参、阳参的点位暂时不用调整。</p>
+<p>例如，点击【枪头盒1起点】移动机械臂，调整X、Y的位置，使Z1轴对准枪头盒第1个孔位，位置对准以后，先点XY点位设定，再点保存点位。（可以将Z1轴降下来，方便调整，调整完需要将Z1轴回零，才可以调整Z轴点位）</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>起点</th>
+<th>终点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>枪头盒、pcr微孔板、样本盒</td>
+<td>第1行第1列（即第一个孔位）</td>
+<td>最后1行最后1列（即最后一个孔位）</td>
+</tr>
+<tr>
+<td>提取试剂盒</td>
+<td>第1行第6列（即A6）</td>
+<td>第8行第12列（即H12）</td>
+</tr>
+<tr>
+<td>AH试剂盒-AH、阴参</td>
+<td>第1行第1列（即左上角第一个孔位）</td>
+<td>第5行第2列</td>
+</tr>
+<tr>
+<td>AH试剂盒-buff</td>
+<td>第6行第1列</td>
+<td>第10行第1列</td>
+</tr>
+<tr>
+<td>AH试剂盒-阳参</td>
+<td>第6行第2列（即八连管第1孔）</td>
+<td>第13行第2列（即八连管第8孔）</td>
+</tr>
+</tbody></table>
+<h4 id="2、Z轴点位设定"><a href="#2、Z轴点位设定" class="headerlink" title="2、Z轴点位设定"></a>2、Z轴点位设定</h4><p>调整取短枪头位，AH取样位，微孔板加样位，提取取样位，卸针位的点位，其他位置暂时不用调整。</p>
+<p>例如，点击【卸针槽起点】和【卸针位】，调整Z轴位置，保证针杆和枪头间隙的斜面能对准卸针槽，再点击【卸针槽终点】和【空闲位】，即可完成卸枪头动作。</p>
+<blockquote>
+<p>注意：调整Z轴点位，不确定高低深浅时，可以上下拉动试剂管，pcr管和试剂盒，能轻微拉动有间隙即可，不能死死抵住瓶底，容易造成Z轴电机撞击失步。</p>
+</blockquote>
+<p><img src="SAW-96%E8%A3%85%E6%9C%BA%E8%B0%83%E8%AF%95SOP.assets/image-20200629150022113.png" alt="image-20200629150022113"></p>
+<p><img src="SAW-96%E8%A3%85%E6%9C%BA%E8%B0%83%E8%AF%95SOP.assets/image-20200629150143631.png" alt="image-20200629150143631"></p>
+<h2 id="五、整体测试"><a href="#五、整体测试" class="headerlink" title="五、整体测试"></a>五、整体测试</h2><p>1、选择样本</p>
+<p><img src="SAW-96%E8%A3%85%E6%9C%BA%E8%B0%83%E8%AF%95SOP.assets/image-20200621192018547.png" alt="image-20200621192018547"></p>
+<p>2、选择提取方案，推荐测试方案（省时）</p>
+<p>3、勾选提取、分液、加样流程</p>
+<p><img src="SAW-96%E8%A3%85%E6%9C%BA%E8%B0%83%E8%AF%95SOP.assets/image-20200629154307807.png" alt="image-20200629154307807"></p>
+<p>4、点击开始，选择分液方案，推荐（硕世）试剂A（预混匀方案需要大号的试剂管）</p>
+<p>5、点击确定，开始运行。</p>
+<p><img src="SAW-96%E8%A3%85%E6%9C%BA%E8%B0%83%E8%AF%95SOP.assets/image-20200629153644450.png" alt="image-20200629153644450"></p>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure
+          class="avatar avatar-lg"
+          data-initial="s"
+          style="background-color: #3b4351;">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>ssbio</div>
+      <div>2020-06-30</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>
